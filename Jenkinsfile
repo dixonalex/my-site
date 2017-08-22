@@ -26,7 +26,7 @@ pipeline {
                 sh './build/deploy.sh'
             }
         }
-        stage('Deploy - Production') {
+        stage('Cleanup') {
             steps {
                 echo 'Cleaning up workspace....'
                 sh './build/cleanup.sh'
